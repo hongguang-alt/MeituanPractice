@@ -1,0 +1,109 @@
+.shop-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.shop-bar .bottom-content{
+    height: 1.333333rem;
+    display: flex;
+    background-color: rgba(51,51,51,.9);
+}
+.shop-bar .shop-icon{
+    width: 1.466667rem;
+    height: 1.466667rem;
+    background: url('./img/shop-icon.png') 0 0 /cover;
+    margin-top: -0.4rem;
+    margin-left: 0.32rem;
+    position: relative;
+}
+.shop-bar .price-content{
+    flex:1;
+    padding-top: 0.2133333333rem;
+    padding-left: 0.1866666667rem;
+}
+.price-content .total-price{
+    font-size: .533333rem;
+    color: white;
+}
+.price-content .other-price{
+    font-size: .32rem;
+    color: #999;
+    margin-top: .133333rem
+}
+.shop-bar .dot-num{
+    position: absolute;
+    background-color: #fb4e44;
+    width: .4rem;
+    height: .4rem;
+    font-size: .32rem;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    top: 0.0533333333rem;
+    right: 0;
+    text-align: center;
+    line-height: 0.4266666667rem;
+}
+.bottom-content .submit-btn{
+    width: 2.933333rem;
+    background-color: #ffd161;
+    font-size: .426667rem;
+    line-height: 1.333333rem;
+    text-align: center;
+    color: #333;
+    height: 100%;
+}
+.choose-content{
+    background-color:white;
+}
+.choose-content .content-top{
+    font-size: .32rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: .933333rem;
+    background-color: #f4f4f4;
+}
+.clear-car{
+    position: relative;
+}
+.clear-car::before{
+    content: ' ';
+    width: .346667rem;
+    height: .346667rem;
+    position: absolute;
+    background: url('./img/clear.jpeg') 0 0 /cover;
+    left: -0.4rem;
+}
+.choose-item{
+    display: flex;
+    padding-left: .266667rem;
+    font-size: .4rem;
+    color: #2f2f2f;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-top: .533333rem;
+    padding-bottom: .533333rem;
+    position: relative;
+}
+.choose-item .item-name{
+    width: 5.733333rem;
+}
+.choose-content .select-content{
+    display: flex;
+    position: absolute;
+    right:.5rem;
+    bottom: .4rem;
+    line-height: .666667rem;
+    text-align: center;
+}
+.mask{
+    position: fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    background-color: rgba(0,0,0,.7);
+}

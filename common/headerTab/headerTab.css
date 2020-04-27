@@ -1,0 +1,28 @@
+.tab-bar{
+    height: 1.2rem;
+    display: flex;
+    font-size: .45rem;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 1.2rem;
+    width: 100%;
+    position: fixed;
+    margin-top: 1.866667rem;
+    background-color: white;
+    z-index: 99;
+}
+.tab-bar .bar-item{
+    flex:1;
+    color: #666;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+}
+.tab-bar .bar-item.active::after{
+    content: '';
+    width: 1.6rem;
+    height: .106667rem;
+    display: inline-block;
+    position: absolute;
+    background-color:  #ffd161;
+    transform: translate(-50%,-100%);
+}

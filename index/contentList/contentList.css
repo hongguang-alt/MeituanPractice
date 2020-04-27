@@ -1,0 +1,98 @@
+.list-content {
+    overflow: hidden;
+    padding-bottom: .266667rem;
+    margin-bottom: 1.333333rem;
+}
+
+.list-content .list-title {
+    font-size: .4rem;
+    text-align: center;
+    margin-bottom: .4rem;
+}
+
+.list-content .title-line {
+    display: inline-block;
+    width: 1.333333rem;
+    height: .026667rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .8);
+    margin: 0 .266667rem;
+    vertical-align: middle;
+}
+.loading{
+    margin-top: -0.4rem;
+    font-size:  .4rem;
+    text-align: center;
+    color: #ccc;
+}
+.list-content .r-item-content {
+    display: flex;
+    margin: .8rem .266667rem;
+    color: #656565;
+    position: relative;
+}
+
+.r-item-content .item-img {
+    width: 2.2933333333rem;
+    height: 1.7333333333rem;
+    border: 1px solid #e4e4e4;
+}
+.brand {
+    position: absolute;
+    font-size: .266667rem;
+    color: white;
+    top: .053333rem;
+    left: .053333rem;
+}
+.brand-pin{
+    background-color: #ffa627;
+}
+.brand-xin{
+    background-color: #21c56c;
+}
+.item-info-content{
+    flex:1;
+    margin-left: .133333rem;
+}
+.item-info-content .item-title{
+    font-size: .453333rem;
+    font-weight: 500;
+    color:#333;
+}
+.item-info-content .item-desc{
+    margin-top: .32rem;
+    font-size: .32rem;
+}
+.item-desc .item-score{
+    float: left;
+}
+.item-desc .item-count{
+    float: left;
+    margin-left: .266667rem;
+}
+.item-desc .item-distance{
+    float: right;
+}
+.item-desc .item-time{
+    float:right;
+}
+.item-price{
+    margin-top: .266667rem;
+    font-size: .32rem;
+}
+
+.r-item-content .other-info{
+    margin-top: .4rem;
+    font-size: .32rem;
+    color: rgba(0,0,0,.5);
+    margin-top: .3rem;
+}
+.other-info .other-tag{
+    width: .4rem;
+    height: .4rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.other-info .other-content{
+    display: inline-block;
+    vertical-align: middle;
+}

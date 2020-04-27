@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        (function () {
+            var doc = document.documentElement
+            //设置页面的rem
+            function setRem() {
+                var rem = doc.clientWidth / 10;
+                doc.style.fontSize = rem + 'px'
+            }
+
+            setRem()
+
+            //当页面改变的时候重新设置rem
+            window.addEventListener('resize', setRem)
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    setRem()
+                }
+            })
+        })()
+    </script>
+    <link rel="stylesheet" href="../lib/reset.css">
+    <link rel="stylesheet" href="../common/navHeader/navHeader.css">
+    <link rel="stylesheet" href="../common/headerTab/headerTab.css">
+    <link rel="stylesheet" href="./left/left.css">
+    <link rel="stylesheet" href="./right/right.css">
+    <link rel="stylesheet" href="./shopBar/shopBar.css">
+    <title>深圳麦当劳前海二餐厅</title>
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <div class="nav"> 
+        <div class="back-icon"></div>
+        <h4 class='title'>深圳麦当劳前海二餐厅</h4>
+    </div>
+    <!-- 头部结束 -->
+    <!-- tabber开始 -->
+    <div class="tab-bar"></div>
+    <!-- tabber结束 -->
+    <!-- 内容区域开始 -->
+    <div class="menu-inner">
+        <div class="left-bar">
+            <div class="left-bar-inner"></div>
+        </div>
+        <div class="right-content">
+            <p class="right-title"></p>
+            <div class="right-list">
+                <div class="right-list-inner"></div>
+            </div>
+        </div>
+        <!-- 购物车开始 -->
+        <div class="shop-bar"></div>
+        <div class="mask hide"></div>
+        <!-- 购物车结束 -->
+    </div>
+    <!-- 内容区域结束 -->
+    <script src = '../lib/jquery.min.js'></script>
+    <script src = '../common/headerTab/headerTab.js'></script>
+    <script src="../menu/left/left.js"></script>
+    <script src="../menu/right/right.js"></script>
+    <script src="../menu/shopBar/shopBar.js"></script>
+</body>
+</html>

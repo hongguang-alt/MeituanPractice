@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        (function () {
+            var doc = document.documentElement
+            //设置页面的rem
+            function setRem() {
+                var rem = doc.clientWidth / 10;
+                doc.style.fontSize = rem + 'px'
+            }
+
+            setRem()
+
+            //当页面改变的时候重新设置rem
+            window.addEventListener('resize', setRem)
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    setRem()
+                }
+            })
+        })()
+    </script>
+    <link rel="stylesheet" href="../lib/reset.css">
+    <link rel="stylesheet" href="../common/bottomBar/bottombar.css">
+    <link rel="stylesheet" href="./header/header.css">
+    <link rel="stylesheet" href="./contentlist/contentlist.css">
+    <title>首页</title>
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <div class="header">订单</div>
+    <!-- 头部结束 -->
+    <!-- 订单列表开始 -->
+    <div class="warp">
+        <div class="order-list"></div>
+        <div class="loading">加载中</div>
+    </div>
+    <!-- 订单列表结束 -->
+    <!-- 底部导航开始 -->
+    <div class="bottom-bar"></div>
+    <!-- 底部导航结束 -->
+    <script src = '../lib/jquery.min.js'></script>
+    <script src='../common/bottomBar/bottombar.js'></script>
+    <script src="./contentlist/contentlist.js"></script>
+</body>
+</html>

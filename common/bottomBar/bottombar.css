@@ -1,0 +1,49 @@
+.bottom-bar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:1.3rem;
+    bottom:0;
+    display: flex;
+    border-top: 1px solid #b6b6b6;
+    background-color: rgba(246,246,246,.95);
+}
+.bottom-bar .btn-item{
+    width: 100%;
+    float: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    text-align: center;
+    font-size: .29rem;
+    text-decoration: none;
+}
+.btn-item .tab-icon{
+    width: .63rem;
+    height: .63rem;
+    background-size: cover;
+    margin-bottom: .133333rem;
+}
+.btn-item.active{
+    color: black;
+}
+.my.btn-item .tab-icon{
+    background-image: url('./img/myIcon.png');
+}
+.index.btn-item .tab-icon{
+    background-image: url('./img/homeIcon.png');
+}
+.order.btn-item .tab-icon{
+    background-image: url('./img/orderIcon.png');
+}
+.my.btn-item.active .tab-icon{
+    background-image: url('./img/myIconActive.png');
+}
+.index.btn-item.active .tab-icon{
+    background-image: url('./img/homeIconActive.png');
+}
+.order.btn-item.active .tab-icon{
+    background-image: url('./img/orderIconActive.png');
+}
